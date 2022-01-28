@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <form action="">
+        <!-- add more input tags with type of checkbox, radio, email.etc and fieldsets -->
+        <legend>Name</legend><label>
+            <input type="text">
+              </label>
+        <br>
+        <br>
+        <legend>Address</legend><label>
+            <textarea name="address"></textarea>
+              </label>
+              <br>
+              <br>
+              <legend>Contact Number</legend><label>
+                <input type ="text">
+                  </label>
+                  <br>
+              <br>
+                  <legend>House Number</legend><label>
+                    <input type ="text">
+                      </label>
+                      <br>
+                      <br>
+                      <legend>Is this property your main residence?</legend><label> 
+                        <input type="radio" name="a" value="yes">
+                        Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="a" value="no">
+                            No
+                            </label> 
+                            <br>
+                            <br>
+                            <legend>How long have you owned/lived at this property</legend>   
+                            <label>
+                                <legend>Months</legend>
+                                <input type="number" >
+                                </label>
+                                <label>
+                                    <legend>Year</legend>
+                                    <input type="number" >
+                                    </label> 
+                            <fieldset>
+                <legend>Something</legend><label>
+                <label>
+            <input type="radio" name="os" value="mac">
+            Mac
+            </label>
+            <label>
+                <input type="radio" name="os" value="linux">
+                Linux
+                </label>
+            </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Favourite js frameworks</legend><label>
+            <label>
+        <input type="checkbox" name="ck angular" value="angular">
+        angular
+        </label>
+        <label>
+            <input type="checkbox" name="ck react" value="react">
+            react
+            </label>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+        <label>
+        Position
+        <select name="position">
+            <option value="" selected></option>
+            <option value="fs" >full stack</option>
+            <option value="fe" >front end</option>
+            <option value="be">back end</option>
+        </select>
+            </label>
+        </fieldset>
+        <br>
+        <label>Email
+            <input name="email" type="email">
+        </label>
+        <br>
+        <br>
+        <label>Comment
+            <textarea name="comment"></textarea> 
+        </label>
+        <br>
+        <br>
+    <button type='submit'>Submit</button>
+    </form>
+</body>
+</html> 
