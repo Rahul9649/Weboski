@@ -1,5 +1,5 @@
 # Weboski
-Weboski is a web development Bootcamp conducted by IEDC CEC.
+Weboski is a Web Development Bootcamp conducted by IEDC CEC.
 So this is our team project for this bootcamp.
 
 ## Team Members
