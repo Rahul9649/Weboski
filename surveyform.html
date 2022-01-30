@@ -8,178 +8,203 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <fieldset>
+    <h1>POST-FLOOD SURVEY FORM</h1>
     <form action="">
-        <!-- add more input tags with type of checkbox, radio, email.etc and fieldsets -->
-        <legend>1. Name</legend><label>
-            <input type="text">
-              </label>
-        <br>
-        <br>
-        <legend>2. Address</legend><label>
-            <textarea name="address"></textarea>
-              </label>
-              <br>
-              <br>
-              <legend>3. Contact Number</legend><label>
-                <input type ="text">
-                  </label>
-                  <br>
-              <br>
-                  <legend>4. House Number</legend><label>
-                    <input type ="text">
-                      </label>
-                      <br>
-                      <br>
-                      <legend>5. Is this property your main residence?</legend><label> 
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="a" value="yes">
-                        Yes
-                        </label>
-                        <label>
-                        <input type="radio" name="a" value="no">
-                        No
-                        </label> 
-                       <br>
-                       <br>
-                        <legend>6. How long have you owned/lived at this property?</legend> 
-                        <br>  
-                        <label>
-                            
-                        <legend>Months</legend>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" >
-                        </label>
-                        <label>
-                        <legend>Year</legend>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" >
-                        </label> 
-                    <br>
-                    <br>
-                    
-                        <legend>7. Are there any rivers,streams,canals ,lakes,reservoirs,ponds or other watercourses within 1/4 of a mile of the property?</legend><label> 
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="a" value="yes">
-                            Yes
-                            </label>
-                            <label>
-                            <input type="radio" name="a" value="no">
-                            No
-                            </label> 
-                
-                
-        <br>
-        <br>
-        <legend>8. Date of Incident</legend>
-        <br><label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date">
-              </label>
-        <br>
-        <br>
-        9. What was the cause of the flood?
-        <br>
-        <ul>
-        <li>
-        <legend>Overtopping of a river ,water or reservoir</legend><label> 
-            <input type="radio" name="a" value="yes">
-            Yes
-            </label>
+      <div id="main">
+        <div class="form-control">            
+            <legend>1. Name</legend>
             <label>
-            <input type="radio" name="a" value="no">
-            No
-            </label> 
-        </li>
-        <li> 
-            <legend>Coastal inundation</legend><label> 
+                <input type="text" name="name" placeholder="Enter Name" required>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <legend>2. Address</legend>
+            <label>
+                <textarea name="address" cols="30" rows="5"  placeholder="Enter Address" required></textarea>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <legend>3. Contact Number</legend>
+            <label>
+                <input type ="text" name="num" placeholder="Enter Contact Number" required>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <legend>4. House Number</legend>
+            <label>
+                <input type ="text" name="num2" placeholder="Enter House Number" required>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <legend>5. Is this property your main residence?</legend>
+            <label>
                 <input type="radio" name="a" value="yes">
                 Yes
-                </label>
-                <label>
+            </label>                                    
+            <label>
                 <input type="radio" name="a" value="no">
                 No
-                </label> 
-        </li>
-        <li>
-                <legend>Urban run off</legend><label> 
-                    <input type="radio" name="a" value="yes">
+            </label>
+        </div> 
+
+        <div class="form-control">
+            <legend>6. How long have you owned/lived at this property?</legend>
+            
+            <div class="period">
+                <label for="month">Month : </label>
+                    <input type="number" name="month" >                               
+                <label for="year">Year : </label>                               
+                    <input type="number" name="year" >
+            </div>
+        </div> 
+
+        <div class="form-control">
+            <legend>7. Are there any rivers,streams,canals ,lakes,reservoirs,ponds or other watercourses within 1/4 of a mile of the property?</legend>
+            <label>
+                <input type="radio" name="a" value="yes">
                     Yes
-                    </label>
+            </label>
+            <label>
+                <input type="radio" name="a" value="no">
+                     No
+            </label>
+        </div>
+
+        <div class="form-control">
+            <legend>8. Date of Incident</legend>
+            <label>
+                <input type="date">
+            </label>
+        </div>
+
+        <div class="form-control">
+            9. What was the cause of the flood?
+            
+            <ul>
+                <li>
+                    <legend>Overtopping of a river ,water or reservoir</legend>
                     <label>
-                    <input type="radio" name="a" value="no">
-                    No
-                    </label>
-        </li>
-        <li>
-                    <legend>Field run off</legend><label> 
                         <input type="radio" name="a" value="yes">
                         Yes
-                        </label>
-                        <label>
+                    </label>
+                    <label>
                         <input type="radio" name="a" value="no">
                         No
-                        </label>
-        </li>
-        <li>
-                        <legend>Ground water</legend><label> 
-                            <input type="radio" name="a" value="yes">
-                            Yes
-                            </label>
-                            <label>
-                            <input type="radio" name="a" value="no">
-                            No
-                            </label>
-        </li>
-        <li>
-                            <legend>Drain blockage or inadequacy</legend><label> 
-                                <input type="radio" name="a" value="yes">
-                                Yes
-                                </label>
-                                <label>
-                                <input type="radio" name="a" value="no">
-                                No
-                                </label>
-
-        </li>
-        </ul>
-        <legend>10. Were there any type of farming activities? </legend><label> 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="a" value="yes">
-            Yes
+                    </label>
+                </li>
+                <li>
+                    <legend>Coastal inundation</legend>
+                    <label>
+                        <input type="radio" name="a" value="yes">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value="no">
+                        No
+                    </label>
+                </li>
+                <li>
+                    <legend>Urban run off</legend>
+                    <label>
+                        <input type="radio" name="a" value="yes">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value="no">
+                        No
+                    </label>
+                </li>
+                <li>
+                    <legend>Field run off</legend>
+                    <label>
+                        <input type="radio" name="a" value="yes">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value="no">
+                        No
+                    </label>
+                </li>
+                <li>
+                    <legend>Ground water</legend>
+                    <label>
+                        <input type="radio" name="a" value="yes">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value="no">
+                        No
+                    </label>
+                </li>
+                <li>
+                    <legend>Drain blockage or inadequacy</legend>
+                    <label>
+                        <input type="radio" name="a" value="yes">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="a" value="no">
+                        No
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="form-control">
+            <legend>10. Were there any type of farming activities? </legend>
+            <label>
+                <input type="radio" name="a" value="yes">
+                Yes
             </label>
             <label>
-            <input type="radio" name="a" value="no">
-            No
-            </label> 
-            <br>
-            <br>
-            <legend>11. How was the property affected?</legend><label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="address"></textarea>
-                  </label>
-                  <br>
-                  <br>
-            <legend>12. What was the total cost of all the repairs to the building and other damages?</legend><label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="address"></textarea>
+                <input type="radio" name="a" value="no">
+                No
             </label>
-            <br>
-            <br>
-            <legend>13. Upload ID Proof</legend><label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file">
-            </label>
-            
-            
+        </div> 
 
-        
-        <br>
-        <br>
-        <label>14. Email
-            <input name="email" type="email">
-        </label>
-        <br>
-        <br>
-        <legend>15. Any Queries?</legend>
+        <div class="form-control">
+            <legend>11. How was the property affected?</legend>
             <label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="comment"></textarea> 
-        </label>
-        <br>
-        <br>
-    <button type='submit'>Submit</button>
+                <textarea name="address" cols="30" rows="5"></textarea>
+            </label>
+        </div>
+              
+
+        <div class="form-control">
+            <legend>12. What was the total cost of all the repairs to the building and other damages?</legend>
+            <label>
+                <textarea name="address" cols="30" rows="5"></textarea>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <legend>13. Upload ID Proof</legend>
+            <label class="file">
+                <input type="file">
+            </label>
+        </div>
+
+        <div class="form-control">
+            <legend>14. Email</legend>
+            <label>
+                <input name="email" type="email">
+            </label>
+        </div>
+
+        <div class="form-control">
+            <legend>15. Any Queries?</legend>
+            <label>
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <textarea name="comment" cols="30" rows="5"></textarea>
+            </label>
+        </div>
+
+        <button type='submit'>Submit</button>
+      </div>
     </form>
-</fieldset>
+
 </body>
 </html> 
